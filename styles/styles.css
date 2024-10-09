@@ -1,0 +1,739 @@
+/* место для вашего кода */
+
+
+body {
+    /* Тот шрифт которого много на страницы, сериф - если сломается что-то */
+    padding: 0;
+    margin: 0;
+    
+    
+    font-family: Raleway, sans-serif;
+    
+    font-weight: 400;
+    background-color: #000000;
+    
+   
+    
+} 
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+ol, 
+blockquote {
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.content-section {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 3028px;
+    height: 293px;
+    
+    margin: 0;
+    padding: 0;
+   
+
+    color: #000000;
+    background-color: #fdfdfd;
+
+    
+
+   
+       
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 94px;
+    padding-bottom: 96px;
+
+    
+    
+    
+    
+
+    /* background-color: #56e215; для проверок */
+
+}
+
+
+.header__menu {
+    /* контейнер навигации; */
+    margin-top: 42px;    
+    margin-left: 26.58px;
+
+    font-family: Raleway, regular;
+    font-size: 18px;
+}
+
+  .header__links-list {
+    display: flex;
+   
+  }
+
+
+.header__links-list-item { 
+    list-style: none;
+  
+}
+
+.header__links-list-item:before {
+    /* отображение маркеров на одной строке */
+    content: "";
+    display: block;
+
+}
+
+.header__links-list-item_no-bullit {
+    /* отображение маркеров кроме одного пункта меню  */
+    list-style: circle;
+    margin-left: 26px;
+    letter-spacing: 0.4px;
+    word-spacing: 0.6px;
+    padding-left: 3px;
+    
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    
+}
+
+
+.header__logo {
+    
+    transform: translate(-52%, -0.2%);
+ 
+}
+
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+    
+    margin-top: 0px;
+    margin-bottom: opx;
+  
+}
+
+.address {
+  /* address — контейнер с адресом; */
+
+}
+
+
+.header__address {
+    margin-right: 60px;
+    margin-top: 3.5px;
+    line-height: 24.5px;
+    letter-spacing: 1.1px;
+
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.cover {
+    
+    display: flex;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: 1390px 810px;
+    transform: translate(0%, 0%);
+    
+    
+    min-height: 757px;
+    background-position: center;
+    /* background-color: #0b22f1; */
+} 
+
+
+
+.cover__title {
+    font-family: 'Raleway', bold;
+    
+    font-size: 100px;
+   
+    color: #fff;
+    
+    position: absolute;
+    
+    
+    
+}
+
+.overlay {
+    
+    position: absolute;
+    
+    background-color: #080808;
+    opacity: 60%;
+
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.letter-spacing {
+    display: block;
+    text-transform: uppercase;
+    
+}
+    
+
+.aligned-text {
+    text-align: left;
+
+
+    letter-spacing: 33px;
+    
+    padding-left: 2px;
+    
+
+    transform: translate(10.5%, 138%);
+    
+    
+
+}
+
+.aligned-text_center {
+    text-align: center;
+    letter-spacing: 30px;
+    
+    
+
+    transform: translate(70.5%, 147%);
+  
+}
+
+
+.aligned-text_right {
+    text-align: right;    
+    letter-spacing: 31.5px;
+    
+    
+    
+
+    transform: translate(143%, 150%);
+    
+}
+
+
+.letter-spacing-extended {
+    word-spacing: -30px;
+
+}
+
+.no-letter-spacing {
+    
+    
+
+
+}
+
+.cover__description {
+   
+    position: unset;
+    display: flex;
+    align-items: flex-end;
+    height: 690px;
+    width: 1050px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 3px;
+   
+}
+
+.cover__description-text {
+    font-size: 22px;
+    font-family: Raleway, regular;
+    letter-spacing: -0.7px;
+    line-height: 1;
+    text-transform: uppercase;
+    word-spacing: 21px;
+    transform: translate(0%, 0%);
+    margin-left: 79.5px;
+    
+    
+ 
+}
+
+.bet-button {
+    
+    border: 1px solid #ffffff; /* Параметры рамки */
+    
+    font-size: 22px; /* Размер текста */
+    padding: 13px 5px; /* Поля вокруг текста */
+    padding-left: 28px;
+    float: center;
+    align-items: center;
+   
+    color: #fdfdfd;
+    letter-spacing: 0.2px;
+    word-spacing: 0.5px;
+    
+    bottom: 250px;
+    width: 256px; 
+    height: 51px;
+
+    transform: translate(279%, 1277%);
+    
+    
+}
+
+
+
+.lots {
+    /* вся секция; */
+    
+    box-sizing: border-box;
+    color: #000000;
+    background-color: #fdfdfd;
+    height: 1092px;
+    max-width: 3028px;
+    width: 100%;
+    position: relative;
+    
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+.lots__heading {
+    /* заголовок секции; */
+    
+    margin-top: 180px;
+    margin-left: 65px;
+    text-transform: uppercase;
+    font-size: 40px;
+    position: absolute;
+   
+    
+}
+
+.lots__card-list {
+    /* список карточек; */
+    margin: 0;
+    padding: 0;
+    display: flex;    
+
+}
+
+    /* transform: translate(-15%, 0%); */
+    
+    
+
+
+
+
+
+.card-link {
+    /* ссылка, обрамляющая карточку; */
+    
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+    
+    height: 565px;
+    width: 334px;
+    
+    margin-top: 253px;
+    margin-left: 24.5px;
+    
+    
+    
+    list-style-type: none;
+
+    color: #030303;
+
+    transform: translate(0%, 0%);
+
+}
+
+
+.card__title {
+    /* заголовок карточки; */
+    display: block;
+    position: absolute;
+    
+    list-style-type: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    text-align: left;
+    
+
+    letter-spacing: 0px;
+    word-spacing: 0px;
+
+    
+    
+    font-weight: bold;
+    color: #fffdfd; 
+
+    margin-top: 52px;
+    margin-left: 40px;
+
+
+}
+
+.card__text {
+    /* текст карточки; */
+    display: block;
+    position: absolute;
+
+    font-size: 20px;
+    color: #ffffff;
+
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 24px;
+    
+    margin-left: 40px;
+    margin-top: 158px;
+
+    padding-right: 40px;
+
+    /* transform: translate(0%, 0%); */
+    
+}
+
+.card {
+    display: block;
+    position: absolute;
+    margin-top: 370px;
+  
+}
+
+
+.lots__card-list-item {
+    display: block;
+    position: absolute;
+    margin-top: 250px;
+    letter-spacing: 0.2px;
+    padding-right: 35px;
+
+}
+
+
+.card_type_film {
+   
+
+    background-position: 50%;
+    background-size: 170%;
+    background-image: url(../images/card-lot-01.jpg);
+    background-repeat: no-repeat;
+    
+    
+    /* margin-top: 244px; */
+
+    
+}
+
+.card_type_book {
+
+    background-position: 50%;
+    background-size: 160%;
+    background-image: url(../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+
+    
+
+
+/* transform: translate(-40%, 0%); */
+}
+
+.card_type_picture {
+
+    background-position: 50%;
+    background-size: 160%;
+    background-image: url(../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.lots__look-more-link {
+    /* ссылка «Посмотреть больше». */
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    height: 870px;
+    float: left;
+    font-size: 20px;
+    margin-left: 63px;
+    
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.about {
+/* вся секция */
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 595px;
+}
+
+.about__column {
+/* класс для колонок */
+    white-space: normal;	
+	display: inline-block;
+	width: 100%;
+	/* transform: translate(0%, 0%); */
+    
+	
+
+}
+
+.about__logo {
+/* контейнер с логотипом */
+    display: flex;
+  
+    
+    background:#000000;
+    
+    position: relative;
+    border-radius: 100%;
+    
+    width: 240px;
+    height: 240px;
+
+    margin-left: 72px;
+    margin-top: -40px;
+
+}
+
+.about__logo-image {
+/* изображение логотипа */
+    width: 240px;
+    height: 114px;
+
+    margin-top: 62px;
+    margin-bottom: 0px;
+}
+
+.about__title {
+/* заголовок секции */
+
+    position: absolute;
+    font-size: 40px;
+    text-transform: uppercase;
+
+    margin-top: 61px;
+    margin-left: 70px;
+
+    
+
+}
+
+.about__text {
+/* блок для текстов секции */
+    
+
+    margin-left: 70px;
+    font-family: Raleway, regular;
+    font-size: 20px; 
+    
+    /* gap: 25px; */
+}
+
+.about__text__zero {
+    padding-right: 24px;
+    letter-spacing: 0.1px;
+    word-spacing: 0.15px;
+    
+    margin-top: 210px;
+    line-height: 24px;
+    flex-direction: column;
+    display: flex;
+
+}
+
+
+.about__text__first {
+    margin-left: 70px;
+    padding-right: 24px;
+    letter-spacing: 0px;
+    word-spacing: 0.15px;
+    
+    margin-top: 210px;
+    line-height: 24px;
+    flex-direction: column;
+    display: flex;
+
+    margin-top: 22px;
+  
+    
+    
+    
+}
+
+.about__text__second {
+    margin-left: 70px;
+    font-family: Raleway, regular;
+    font-size: 20px; 
+    padding-right: 24px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    
+    line-height: 24px;
+    flex-direction: column;
+
+  
+}
+
+.about__text__third {
+    margin-left: 70px;
+    font-family: Raleway, regular;
+    font-size: 20px; 
+    padding-right: 24px;
+    letter-spacing: 0.1px;
+    word-spacing: 0px;
+    
+    line-height: 24px;
+    flex-direction: column;
+ 
+}
+
+.about__text__second_four {
+
+}
+.about__text__second_five {
+    margin-left: 70px;
+    font-family: Raleway, regular;
+    font-size: 20px; 
+    padding-right: 24px;
+    letter-spacing: 0.15px;
+    word-spacing: 0px;
+    
+    line-height: 24px;
+    flex-direction: column;
+
+}
+
+.about__text__six {
+    margin-left: 70px;
+    font-family: Raleway, regular;
+    font-size: 20px; 
+    padding-right: 24px;
+    letter-spacing: 0.1px;
+    word-spacing: 0px;
+    
+    line-height: 24px;
+    flex-direction: column;
+
+}
+
+.about__text__seven {
+
+}
+
+
+
+
+
+.footer {
+    /* подвал; */
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 250px;
+    font-size: 18;
+    padding-top: 105px;
+    padding-left: 52px;
+    line-height: 24.3px;
+    letter-spacing: 1px;
+    text-underline-offset: 4px;
+    
+    
+}
+
+
+
+
+.footer__menu {
+    /* блок навигации по списку ссылок. 
+    Мы рекомендуем окружать список тегом <nav> с этим классом; */
+    display: flex;
+}
+
+.footer__menu-list  {
+    /* список пунктов меню; */
+    text-align: center;
+    padding-left: 41px;
+    
+    
+    
+}
+
+
+.footer__menu-list-item {
+    /* пункт списка меню; */
+    line-height: 22px;
+    list-style-type: none;
+    
+    
+}
+
+
+.footer__menu-link {
+    /* ссылка меню; */
+
+}
+
+
+.footer__menu-link_active {
+    /* активная ссылка меню (без подчёркивания); */
+}
+
+
+.footer__social-list {
+    /* список ссылок на социальные сети. Можно не добавлять тег <nav>, 
+    потому что это ссылки на внешние ресурсы; */
+    display: flex;
+   
+    transform: translate(1%, -25%);
+    /* padding-right: 0px;
+    padding-left: 15px; */
+}
+
+.footer__social-list-item {
+    /* пункт списка ссылок на социальные сети; */
+}
+
+.footer__social-link {
+    /* ссылка на социальные сети; */
+}
+
+.footer__social-icon {
+    /* иконка социальной сети. */
+    
+    width: 50px;
+    height: 105px;
+    margin-right: 48px;
+
+
+    
+    
+}
