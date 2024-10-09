@@ -6,14 +6,10 @@ body {
     padding: 0;
     margin: 0;
     
-    
     font-family: Raleway, sans-serif;
-    
     font-weight: 400;
     background-color: #000000;
-    
-   
-    
+
 } 
 
 h1, 
@@ -40,14 +36,9 @@ blockquote {
     
     margin: 0;
     padding: 0;
-   
 
     color: #000000;
     background-color: #fdfdfd;
-
-    
-
-   
        
 }
 
@@ -60,14 +51,6 @@ blockquote {
     padding-right: 24px;
     padding-top: 94px;
     padding-bottom: 96px;
-
-    
-    
-    
-    
-
-    /* background-color: #56e215; для проверок */
-
 }
 
 
@@ -113,9 +96,7 @@ blockquote {
 
 
 .header__logo {
-    
     transform: translate(-52%, -0.2%);
- 
 }
 
 .header__logo-image {
@@ -124,12 +105,10 @@ blockquote {
     
     margin-top: 0px;
     margin-bottom: opx;
-  
 }
 
 .address {
   /* address — контейнер с адресом; */
-
 }
 
 
@@ -151,34 +130,25 @@ blockquote {
     background-size: 1390px 810px;
     transform: translate(0%, 0%);
     
-    
     min-height: 757px;
     background-position: center;
-    /* background-color: #0b22f1; */
+ 
 } 
 
 
 
 .cover__title {
     font-family: 'Raleway', bold;
-    
     font-size: 100px;
-   
     color: #fff;
-    
     position: absolute;
-    
-    
-    
 }
 
 .overlay {
     
     position: absolute;
-    
     background-color: #080808;
     opacity: 60%;
-
     z-index: -1;
     top: 0;
     bottom: 0;
@@ -200,27 +170,16 @@ blockquote {
 
 .aligned-text {
     text-align: left;
-
-
     letter-spacing: 33px;
-    
     padding-left: 2px;
-    
-
     transform: translate(10.5%, 138%);
-    
-    
-
 }
 
 .aligned-text_center {
     text-align: center;
     letter-spacing: 30px;
     
-    
-
     transform: translate(70.5%, 147%);
-  
 }
 
 
@@ -228,24 +187,16 @@ blockquote {
     text-align: right;    
     letter-spacing: 31.5px;
     
-    
-    
-
     transform: translate(143%, 150%);
-    
 }
 
 
 .letter-spacing-extended {
     word-spacing: -30px;
-
 }
 
 .no-letter-spacing {
     
-    
-
-
 }
 
 .cover__description {
@@ -271,14 +222,11 @@ blockquote {
     transform: translate(0%, 0%);
     margin-left: 79.5px;
     
-    
- 
 }
 
 .bet-button {
     
     border: 1px solid #ffffff; /* Параметры рамки */
-    
     font-size: 22px; /* Размер текста */
     padding: 13px 5px; /* Поля вокруг текста */
     padding-left: 28px;
@@ -288,14 +236,11 @@ blockquote {
     color: #fdfdfd;
     letter-spacing: 0.2px;
     word-spacing: 0.5px;
-    
     bottom: 250px;
     width: 256px; 
     height: 51px;
 
     transform: translate(279%, 1277%);
-    
-    
 }
 
 
@@ -310,12 +255,10 @@ blockquote {
     max-width: 3028px;
     width: 100%;
     position: relative;
-    
 
     display: flex;
     margin: 0;
     padding: 0;
-   
 
 }
 
@@ -328,7 +271,6 @@ blockquote {
     font-size: 40px;
     position: absolute;
    
-    
 }
 
 .lots__card-list {
@@ -339,31 +281,19 @@ blockquote {
 
 }
 
-    /* transform: translate(-15%, 0%); */
-    
-    
-
-
-
-
 
 .card-link {
     /* ссылка, обрамляющая карточку; */
     
     box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
-    
     height: 565px;
     width: 334px;
     
     margin-top: 253px;
     margin-left: 24.5px;
-    
-    
-    
     list-style-type: none;
 
     color: #030303;
-
     transform: translate(0%, 0%);
 
 }
@@ -380,13 +310,10 @@ blockquote {
     text-decoration: underline;
     text-underline-offset: 2.5px;
     text-align: left;
-    
 
     letter-spacing: 0px;
     word-spacing: 0px;
 
-    
-    
     font-weight: bold;
     color: #fffdfd; 
 
@@ -413,7 +340,6 @@ blockquote {
 
     padding-right: 40px;
 
-    /* transform: translate(0%, 0%); */
     
 }
 
@@ -436,15 +362,11 @@ blockquote {
 
 
 .card_type_film {
-   
 
     background-position: 50%;
     background-size: 170%;
     background-image: url(../images/card-lot-01.jpg);
     background-repeat: no-repeat;
-    
-    
-    /* margin-top: 244px; */
 
     
 }
@@ -456,10 +378,6 @@ blockquote {
     background-image: url(../images/card-lot-02.jpg);
     background-repeat: no-repeat;
 
-    
-
-
-/* transform: translate(-40%, 0%); */
 }
 
 .card_type_picture {
@@ -499,10 +417,6 @@ blockquote {
     white-space: normal;	
 	display: inline-block;
 	width: 100%;
-	/* transform: translate(0%, 0%); */
-    
-	
-
 }
 
 .about__logo {
@@ -511,10 +425,8 @@ blockquote {
   
     
     background:#000000;
-    
     position: relative;
     border-radius: 100%;
-    
     width: 240px;
     height: 240px;
 
@@ -541,9 +453,6 @@ blockquote {
 
     margin-top: 61px;
     margin-left: 70px;
-
-    
-
 }
 
 .about__text {
@@ -558,6 +467,8 @@ blockquote {
 }
 
 .about__text__zero {
+    /* Для ревьювера: Я знаю, что не использовались эти классы, но только так, 
+    я смог каждую строку привести к дизайнерскую решению. Иначе бы использовал гап из класса выше. */
     padding-right: 24px;
     letter-spacing: 0.1px;
     word-spacing: 0.15px;
@@ -566,7 +477,6 @@ blockquote {
     line-height: 24px;
     flex-direction: column;
     display: flex;
-
 }
 
 
@@ -575,7 +485,6 @@ blockquote {
     padding-right: 24px;
     letter-spacing: 0px;
     word-spacing: 0.15px;
-    
     margin-top: 210px;
     line-height: 24px;
     flex-direction: column;
@@ -583,9 +492,6 @@ blockquote {
 
     margin-top: 22px;
   
-    
-    
-    
 }
 
 .about__text__second {
@@ -598,8 +504,6 @@ blockquote {
     
     line-height: 24px;
     flex-direction: column;
-
-  
 }
 
 .about__text__third {
@@ -641,15 +545,11 @@ blockquote {
     
     line-height: 24px;
     flex-direction: column;
-
 }
 
 .about__text__seven {
 
 }
-
-
-
 
 
 .footer {
@@ -665,8 +565,7 @@ blockquote {
     line-height: 24.3px;
     letter-spacing: 1px;
     text-underline-offset: 4px;
-    
-    
+
 }
 
 
@@ -682,9 +581,7 @@ blockquote {
     /* список пунктов меню; */
     text-align: center;
     padding-left: 41px;
-    
-    
-    
+
 }
 
 
@@ -692,14 +589,12 @@ blockquote {
     /* пункт списка меню; */
     line-height: 22px;
     list-style-type: none;
-    
-    
+
 }
 
 
 .footer__menu-link {
     /* ссылка меню; */
-
 }
 
 
@@ -714,8 +609,7 @@ blockquote {
     display: flex;
    
     transform: translate(1%, -25%);
-    /* padding-right: 0px;
-    padding-left: 15px; */
+
 }
 
 .footer__social-list-item {
@@ -732,8 +626,4 @@ blockquote {
     width: 50px;
     height: 105px;
     margin-right: 48px;
-
-
-    
-    
 }
