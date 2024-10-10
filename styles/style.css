@@ -126,6 +126,7 @@ blockquote {
   font-size: 100px;
   color: #FFFFFF;
   position: absolute;
+  
 }
 
 .overlay {
@@ -402,7 +403,8 @@ blockquote {
   text-transform: uppercase;
 
   margin-top: 61px;
-  margin-left: 70px;
+  margin-left: 380px;
+  
 }
 
 .about__text {
