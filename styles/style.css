@@ -97,9 +97,9 @@ blockquote {
   margin-bottom: opx;
 }
 
-/* .address {
- 
-} */
+.address {
+  font-style: normal;
+}
 
 .header__address {
   margin-right: 60px;
@@ -131,7 +131,7 @@ blockquote {
 
 .overlay {
   position: absolute;
-  background-color: #080808;
+  background-color: #000000;
   opacity: 60%;
   z-index: -1;
   top: 0;
@@ -209,7 +209,7 @@ blockquote {
   float: center;
   align-items: center;
 
-  color: #fdfdfd;
+  color: #ffffff;
   letter-spacing: 0.2px;
   word-spacing: 0.5px;
   bottom: 250px;
