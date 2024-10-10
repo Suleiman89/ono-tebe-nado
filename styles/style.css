@@ -7,9 +7,9 @@ body {
 
   font-family: Raleway, sans-serif;
   font-weight: 400;
-  background-color: transparent;
-  /* background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.0) */
+  /* background-color: transparent;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.0) */ 
 }
 
 h1,
@@ -127,7 +127,7 @@ blockquote {
 .cover__title {
   font-family: "Raleway", bold;
   font-size: 100px;
-  color: #fff;
+  color: #FFFFFF;
   position: absolute;
 }
 
@@ -201,7 +201,7 @@ blockquote {
 }
 
 .bet-button {
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   /* Параметры рамки */
   font-size: 22px;
   /* Размер текста */
@@ -211,7 +211,7 @@ blockquote {
   float: center;
   align-items: center;
 
-  color: #ffffff;
+  color: #FFFFFF;
   letter-spacing: 0.2px;
   word-spacing: 0.5px;
   bottom: 250px;
