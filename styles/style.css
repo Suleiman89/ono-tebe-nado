@@ -2,11 +2,11 @@
 
 body {
   /* Тот шрифт которого много на страницы, сериф - если сломается что-то */
-  padding: 0;
+  /* padding: 0;
   margin: 0;
 
   font-family: Raleway, sans-serif;
-  font-weight: 400;
+  font-weight: 400; */
 }
 
 h1,
