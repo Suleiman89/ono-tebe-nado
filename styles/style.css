@@ -36,7 +36,7 @@ blockquote {
   padding: 0;
 
   color: #000000;
-  background-color: #fdfdfd;
+  background-color: #FFFFFF;
 }
 
 .header {
@@ -173,8 +173,8 @@ blockquote {
   word-spacing: -30px;
 }
 
-.no-letter-spacing {
-}
+/* .no-letter-spacing {
+} */
 
 .cover__description {
   position: unset;
@@ -224,7 +224,7 @@ blockquote {
 
   box-sizing: border-box;
   color: #000000;
-  background-color: #fdfdfd;
+  background-color: #FFFFFF;
   height: 1092px;
   max-width: 3028px;
   width: 100%;
@@ -283,7 +283,7 @@ blockquote {
   word-spacing: 0px;
 
   font-weight: bold;
-  color: #fffdfd;
+  color: #FFFFFF;
 
   margin-top: 52px;
   margin-left: 40px;
@@ -358,7 +358,7 @@ blockquote {
 
 .about {
   /* вся секция */
-  background-color: #fdfdfd;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -466,8 +466,8 @@ blockquote {
   flex-direction: column;
 }
 
-.about__text__second_four {
-}
+/* .about__text__second_four {
+} */
 
 .about__text__second_five {
   margin-left: 70px;
@@ -493,12 +493,12 @@ blockquote {
   flex-direction: column;
 }
 
-.about__text__seven {
-}
+/* .about__text__seven {
+} */
 
 .footer {
   /* подвал; */
-  background-color: #fdfdfd;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -529,13 +529,11 @@ blockquote {
   list-style-type: none;
 }
 
-.footer__menu-link {
-  /* ссылка меню; */
-}
+/* .footer__menu-link {
+} */
 
-.footer__menu-link_active {
-  /* активная ссылка меню (без подчёркивания); */
-}
+/* .footer__menu-link_active {
+} */
 
 .footer__social-list {
   /* список ссылок на социальные сети. Можно не добавлять тег <nav>, 
@@ -545,13 +543,11 @@ blockquote {
   transform: translate(1%, -25%);
 }
 
-.footer__social-list-item {
-  /* пункт списка ссылок на социальные сети; */
-}
+/* .footer__social-list-item {
+} */
 
-.footer__social-link {
-  /* ссылка на социальные сети; */
-}
+/* .footer__social-link {
+} */
 
 .footer__social-icon {
   /* иконка социальной сети. */
