@@ -6,8 +6,8 @@ body {
   margin: 0;
 
   font-family: Raleway, sans-serif;
-  font-weight: 400;
-  background-color: #da1212 */
+  font-weight: 400; 
+  background-color: #f30808; */
 }
 
 
@@ -28,536 +28,211 @@ blockquote {
 }
 
 .content-section {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 3028px;
-  height: 293px;
-
-  margin: 0;
-  padding: 0;
-
-  color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff; 
+  
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  /* вся шапка; */
+  background-color: #ffffff; 
+  display: grid;
+  /* через грид строю хедер */
+  grid-template-columns: 1fr min-content 1fr;
+  /* одна треть справа и слева, остальное в центр */
 
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 94px;
-  padding-bottom: 96px;
+  /* padding: 94px 24px 90px 24px; */
+  padding: 92px 50px;
+  /* сверху, влево, вниз и налево */
+
+  font-family: Raleway, regular;
+  font-size: 18px;
+  /*общий шрифт*/
+  align-items: center;
+    /* выравнивает по центру */
+
+    
 }
 
 .header__menu {
   /* контейнер навигации; */
-  margin-top: 42px;
-  margin-left: 26.58px;
-
-  font-family: Raleway, regular;
-  font-size: 18px;
-}
-
-.header__links-list {
+  
+  list-style: none;
   display: flex;
+  
+  gap: 32px;
+  text-underline-offset: 4px;
+
 }
 
 .header__links-list-item {
+  /* пункт списка ссылок; */
   list-style: none;
-}
-
-.header__links-list-item:before {
-  /* отображение маркеров на одной строке */
-  content: "";
-  display: block;
+/* изолировал маркер */
 }
 
 .header__links-list-item_no-bullit {
-  /* отображение маркеров кроме одного пункта меню  */
+  /* вам может потребоваться этот класс, 
+  чтобы сделать ссылку без кружочка перед ней;  */
   list-style: circle;
-  margin-left: 27.6px;
-  letter-spacing: 0.5px;
-  word-spacing: 1px;
-  padding-left: 0.6px;
-
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .header__logo {
-  transform: translate(-52%, -1.2%);
 }
 
 .header__logo-image {
-  width: 148px;
+  width: 141px;
   height: 105px;
-
-  margin-top: 0px;
-  margin-bottom: opx;
 }
 
 .address {
+  /* контейнер с адресом; */
   font-style: normal;
 }
 
 .header__address {
-  margin-right: 60px;
-  margin-top: 4px;
-  line-height: 24.5px;
-  letter-spacing: 1.1px;
+  /* потребуется, чтобы выравнивать блок с адресом. 
+  В футере используется другое выравнивание. */
+  line-height: 24px;
 
   text-decoration: underline;
   text-underline-offset: 4px;
+
+  justify-self: end;
+  padding-right: 35px;
 }
+
+
+
+
+
+
+
+
 
 .cover {
-  display: flex;
+  /* вся секция; */
+  
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: 1390px 810px;
-  transform: translate(0%, 0%);
-
-  min-height: 757px;
   background-position: center;
-}
+  background-size: cover;
+  /* стандартные настройки */
 
-.cover__title {
-  font-family: "Raleway", bold;
-  font-size: 100px;
-  color: #FFFFFF;
-  position: absolute;
+  position: relative;
+  /* позиция относительно формы проекта */
+  min-height: 757px;
+  padding: 165px 50px;
+   /* из фигмы высота секции и отступы, нужны мне для первого текстового объекта*/
   
 }
 
 .overlay {
-  position: absolute;
+  /* полупрозрачный блок поверх секции; */  
   background-color: #000000;
   opacity: 60%;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 
-  width: 100%;
-  height: auto;
+  position: absolute;
+  /* в основном только для оверлея */
+  z-index: 0;
+  /* Отвечает за 3д позицирование относительно элементов*/
+  inset: 0;
+  /* Инсет задаёт позицирование оверлею, обычно четыре значения  */
 }
 
-.letter-spacing {
-  display: block;
+.cover__title {
+  /* заголовок; */
+  font-family: "Raleway", bold;
+  font-size: 100px;
+  color: #FFFFFF;
   text-transform: uppercase;
+  /* данные из фигмы */
+
+  position: relative;
+  /* display: inline-block; */
+  /* даёт тексту быть поверх оверлея, обычно четыре значения */
 }
 
 .aligned-text {
-  text-align: left;
-  letter-spacing: 33px;
-  padding-left: 2px;
-  transform: translate(10.5%, 138%);
-}
-
-.aligned-text_center {
-  text-align: center;
+  /* классы для выравнивания строк текста и превращения их в блочный элемент; 
+  для выражения НО */
+  
   letter-spacing: 30px;
+  display: block;
+  line-height: 115%;
 
-  transform: translate(70.5%, 147%);
-}
-
-.aligned-text_right {
-  text-align: right;
-  letter-spacing: 31.5px;
-
-  transform: translate(143%, 150%);
 }
 
 .letter-spacing-extended {
-  word-spacing: -30px;
-}
-
-/* .no-letter-spacing {
-} */
-
-.cover__description {
-  position: unset;
-  display: flex;
-  align-items: flex-end;
-  height: 690px;
-  width: 1050px;
-  float: left;
-  margin-left: 80px;
-  margin-top: 3px;
-}
-
-.cover__description-text {
-  font-size: 22px;
-  font-family: Raleway, regular;
-  letter-spacing: -0.7px;
-  line-height: 1;
-  text-transform: uppercase;
-  word-spacing: 21px;
-  transform: translate(0%, 0%);
-  margin-left: 79.5px;
-}
-
-.bet-button {
-  border: 1px solid #FFFFFF;
-  /* Параметры рамки */
-  font-size: 22px;
-  /* Размер текста */
-  padding: 13px 5px;
-  /* Поля вокруг текста */
-  padding-left: 28px;
-  float: center;
+  /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты; 
+  для выражения О(но) и (те)БE*/
+  
   align-items: center;
-
-  color: #FFFFFF;
-  letter-spacing: 0.2px;
-  word-spacing: 0.5px;
-  bottom: 250px;
-  width: 256px;
-  height: 51px;
-
-  transform: translate(279%, 1277%);
+  letter-spacing: 60px;
+ 
 }
 
-.lots {
-  /* вся секция; */
-
-  box-sizing: border-box;
-  color: #000000;
-  background-color: #FFFFFF;
-  height: 1092px;
-  max-width: 3028px;
-  width: 100%;
-  position: relative;
-
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.lots__heading {
-  /* заголовок секции; */
-
-  margin-top: 180px;
-  margin-left: 65px;
-  text-transform: uppercase;
-  font-size: 40px;
-  position: absolute;
-}
-
-.lots__card-list {
-  /* список карточек; */
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.card-link {
-  /* ссылка, обрамляющая карточку; */
-
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-  height: 565px;
-  width: 334px;
-
-  margin-top: 253px;
-  margin-left: 24.5px;
-  list-style-type: none;
-
-  color: #030303;
-  transform: translate(0%, 0%);
-}
-
-.card__title {
-  /* заголовок карточки; */
-  display: block;
-  position: absolute;
-
-  list-style-type: none;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-underline-offset: 2.5px;
-  text-align: left;
-
+.no-letter-spacing {
+  /* класс для обнуления общего межбуквенного расстояния для последней буквы;
+  для буквы (над)О */
+  
   letter-spacing: 0px;
-  word-spacing: 0px;
-
-  font-weight: bold;
-  color: #FFFFFF;
-
-  margin-top: 52px;
-  margin-left: 40px;
+ 
 }
 
-.card__text {
-  /* текст карточки; */
+.aligned-text_center {
+  /* классы для выравнивания строк текста и превращения их в блочный элемент; 
+   для выражения ТЕ(бе)*/
+  
   display: block;
-  position: absolute;
-
-  font-size: 20px;
-  color: #ffffff;
-
-  letter-spacing: 0px;
-  word-spacing: 0px;
-  line-height: 24px;
-
-  margin-left: 40px;
-  margin-top: 158px;
-
-  padding-right: 40px;
-}
-
-.card {
-  display: block;
-  position: absolute;
-  margin-top: 370px;
-}
-
-.lots__card-list-item {
-  display: block;
-  position: absolute;
-  margin-top: 250px;
-  letter-spacing: 0.2px;
-  padding-right: 35px;
-}
-
-.card_type_film {
-  background-position: 50%;
-  background-size: 170%;
-  background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-}
-
-.card_type_book {
-  background-position: 50%;
-  background-size: 160%;
-  background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-}
-
-.card_type_picture {
-  background-position: 50%;
-  background-size: 160%;
-  background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-}
-
-.lots__look-more-link {
-  /* ссылка «Посмотреть больше». */
-  position: absolute;
-  display: flex;
-  align-items: flex-end;
-  height: 870px;
-  float: left;
-  font-size: 20px;
-  margin-left: 63px;
-
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.about {
-  /* вся секция */
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 595px;
-}
-
-.about__column {
-  /* класс для колонок */
-  white-space: normal;
-  display: inline-block;
-  width: 100%;
-}
-
-.about__logo {
-  /* контейнер с логотипом */
-  display: flex;
-
-  background: #000000;
-  position: relative;
-  border-radius: 100%;
-  width: 240px;
-  height: 240px;
-
-  margin-left: 72px;
-  margin-top: -40px;
-}
-
-.about__logo-image {
-  /* изображение логотипа */
-  width: 240px;
-  height: 114px;
-
-  margin-top: 62px;
-  margin-bottom: 0px;
-}
-
-.about__title {
-  /* заголовок секции */
-
-  position: absolute;
-  font-size: 40px;
-  text-transform: uppercase;
-
-  margin-top: 61px;
-  margin-left: 380px;
+  text-align: center;
+  line-height: 135%;
+  
+  
   
 }
 
-.about__text {
-  /* блок для текстов секции */
+.aligned-text_right {
+  /* классы для выравнивания строк текста и превращения их в блочный элемент;
+  для выражения НАД(о) */
 
-  margin-left: 70px;
+  display: block;
+  text-align: right;
+  letter-spacing: 37px;
+  line-height: 110%;
+  
+}
+
+.cover__description {
+  /* контейнер для подзаголовка и кнопки; */
+  
+  color: #FFFFFF;
+  text-transform: uppercase;
   font-family: Raleway, regular;
-  font-size: 20px;
-
-  /* gap: 25px; */
+  font-size: 22px;
 }
 
-.about__text__zero {
-  /* Для ревьювера: Я знаю, что не использовались эти классы, но только так, 
-    я смог каждую строку привести к дизайнерскую решению. Иначе бы использовал гап из класса выше. */
-  padding-right: 24px;
-  letter-spacing: 0.1px;
-  word-spacing: 0.15px;
+.cover__description-text {
+  /* текст подзаголовка; */
+  position: relative;
+  top: 158px;
+  left: 28px;
 
-  margin-top: 210px;
-  line-height: 24px;
-  flex-direction: column;
-  display: flex;
+  word-spacing: 18px;
+  
+  
 }
 
-.about__text__first {
-  margin-left: 70px;
-  padding-right: 24px;
-  letter-spacing: 0px;
-  word-spacing: 0.15px;
-  line-height: 24px;
-  flex-direction: column;
-  display: flex;
-  margin-top: 22px;
-}
+.bet-button {
+  /* кнопка «Сделать ставку». */
+  
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  width: 256px;
+  height: 51px;
+  /* Параметры рамки, цвет и рамка */
 
-.about__text__second {
-  margin-left: 70px;
-  font-family: Raleway, regular;
-  font-size: 20px;
-  padding-right: 24px;
-  letter-spacing: 0px;
-  word-spacing: 0px;
-
-  line-height: 24px;
-  flex-direction: column;
-}
-
-.about__text__third {
-  margin-left: 70px;
-  font-family: Raleway, regular;
-  font-size: 20px;
-  padding-right: 24px;
-  letter-spacing: 0.1px;
-  word-spacing: 0px;
-
-  line-height: 24px;
-  flex-direction: column;
-}
-
-/* .about__text__second_four {
-} */
-
-.about__text__second_five {
-  margin-left: 70px;
-  font-family: Raleway, regular;
-  font-size: 20px;
-  padding-right: 24px;
-  letter-spacing: 0.15px;
-  word-spacing: 0px;
-
-  line-height: 24px;
-  flex-direction: column;
-}
-
-.about__text__six {
-  margin-left: 70px;
-  font-family: Raleway, regular;
-  font-size: 20px;
-  padding-right: 24px;
-  letter-spacing: 0.1px;
-  word-spacing: 0px;
-
-  line-height: 24px;
-  flex-direction: column;
-}
-
-/* .about__text__seven {
-} */
-
-.footer {
-  /* подвал; */
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 291px;
-  font-size: 18;
-  padding-top: 105px;
-  padding-left: 52px;
-  line-height: 24.3px;
-  letter-spacing: 1px;
-  text-underline-offset: 4px;
-}
-
-.footer__menu {
-  /* блок навигации по списку ссылок. 
-    Мы рекомендуем окружать список тегом <nav> с этим классом; */
-  display: flex;
-}
-
-.footer__menu-list {
-  /* список пунктов меню; */
-  text-align: center;
-  padding-left: 41px;
-}
-
-.footer__menu-list-item {
-  /* пункт списка меню; */
-  line-height: 22px;
-  list-style-type: none;
-}
-
-/* .footer__menu-link {
-} */
-
-/* .footer__menu-link_active {
-} */
-
-.footer__social-list {
-  /* список ссылок на социальные сети. Можно не добавлять тег <nav>, 
-    потому что это ссылки на внешние ресурсы; */
-  display: flex;
-
-  transform: translate(-0.2%, -25%);
-}
-
-/* .footer__social-list-item {
-} */
-
-/* .footer__social-link {
-} */
-
-.footer__social-icon {
-  /* иконка социальной сети. */
-
-  width: 50px;
-  height: 105px;
-  margin-right: 47px;
-  margin-top: -1px;
-  margin-left: 0.2px;
-
+  position: relative;
+  inset: 120px 740px;
 
 }
+

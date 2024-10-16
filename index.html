@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Оно тебе надо</title>
         <link rel="stylesheet" href="./fonts/fonts.css"/>
-        <link rel="stylesheet" href="./styles/global.css"/>
         <link rel="stylesheet" href="./styles/style.css"/>
+        <link rel="stylesheet" href="./styles/global.css"/>
     </head>
 
-
     <body>
-
         <header>
-
-            <section class="header content-section">
-                <nav class="header__menu">
-                    <ul class="header__links-list header__links-list-item">
+            <section class="header">
+                    <ul class="header__menu">
                     
                         <li class="header__links-list-item">
-                            <a class="header__menu-link">главная</a>
+                            <a class="header__link">главная</a>
                         </li>
                     
                         <li class="header__links-list-item header__links-list-item_no-bullit">
-                            <a class="header__menu-link" href="#0">посмотреть лоты</a>
+                            <a class="header__link-active" href="#0">посмотреть лоты</a>
                         </li> 
 
                         <li class="header__links-list-item header__links-list-item_no-bullit">
-                            <a class="header__menu-link" href="#0">об аукционе</a>
+                            <a class="header__link-active" href="#0">об аукционе</a>
                         </li> 
                         
                     </ul>    
-                </nav>
+               
 
                 <a class="header__logo">
                     <img
@@ -53,6 +48,7 @@
 
                 </address>
             </section>
+                
 
         </header>
 
@@ -60,168 +56,52 @@
 
 
 
-        <main>
-            <section class="cover content-section">
+        <cover>
+            <!-- для первой секции; -->
+            <section class="cover">
              
                 <div class="overlay"></div>
                 <h1 class="cover__title">
-                    <span class="letter-spacing aligned-text letter-spacing-extended">он о</span> 
-                    <span class="letter-spacing aligned-text_center letter-spacing-extended">теб е</span>
-                    <span class="letter-spacing aligned-text_right letter-spacing-extended no-letter-spacing">н адо</span>
+                    <span class="aligned-text">о<span class="letter-spacing-extended">но</span></span>
+                    <span class="aligned-text aligned-text_center">тe<span class="letter-spacing-extended">бе</span></span>
+                    <span class="aligned-text aligned-text_right">над<span class="no-letter-spacing">о</span></span></span>
                 </h1>
 
-                <h3 class="cover__title">
+                <p>
                     <span class="cover__description cover__description-text">Аукцион вещей, в которые никто не верил</span>
-                </h3>     
+                </p>     
 
-                    <span class="cover__description cover__description-text bet-button">сделать ставку</span>
+                <button class="cover__description bet-button">сделать ставку</button>
                 
             
             </section>
-            
 
+        </cover>
 
-            <section class="content-section lots">
+        <lots>
+            <!-- для секции с карточками; -->
 
-                    <h2 class=lots__heading>Лоты</h2>
-                    
-                        <ul class="lots__card-list card-link card_type_film">
-                            
-                            
-                            <li class="card__title">Фильм режиссёра, который бросил киношколу</li>
-                            
-                            <li class="card__text card">Не просто бросил, а ушёл с первой лекции. 
-                                    Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</li>
-                            <li class ="overlay"></li>
-                                
-                        </ul>
-                    
-                        
-        
-                
-                    <ul class="card-link card_type_book">
-                            
+        </lots>
+        <!-- для секции с информацией об аукционе; -->
 
-                            <li class="card__title">Книга, где описан один скучный день<br> из жизни<br> рекламного агента</li>
-                        
-                            <li class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков 
-                                препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 
-                                1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на 
-                                эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</li>
-                            <li class ="overlay"></li>
-                    </ul> 
-                
-                    <ul class="card-link card_type_picture">
-                            
+        <about>
 
-                            <li class="card__title">Картина, которую повторит даже 5-летний сын<br> маминой подруги</li>
-                        
-                            <li class="lots__card-list-item card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</li>
-                            
-                            <li class ="overlay"></li>
-                    </ul> 
+        </about>
 
-                    <span class="lots__look-more-link"><a href="#0">посмотреть больше</a></span>
+        <main>
 
-            </section>
-
-            
-            
-        
-            
-            <section class="about">
-                
-                    <a class="about__logo">
-                        <img
-                            class="about__logo-image"
-                            src="./images/logo-white.svg"
-                            alt="Логотип проекта"
-                        />
-                    </a>
-                    
-                    
-                    <h1 class="about__column about__title">Об аукционе</h1>  <br>
-                        
-                        <div>
-                            <p  class="about__text about__text__zero">Здесь вы не встретите очередное пафосное собрание невероятно 
-                            дорогого антиквариата. Наши лоты вообще не должны были попасть 
-                            ни на один аукцион. Потому что кому нужен дневник девочки-
-                            подростка или картина, которую может нарисовать даже ребёнок?
-                            Кому нужны все эти странные вещи, созданные любителями?</p>
-                            
-                            <p class="about__text about__text__first">Слишком сложные или, наоборот, слишком простые. Опережающие</p>
-                            
-                            <p class="about__text about__text__second">своё время. В пух и прах растерзанные критиками. Непринятые и</p>
-                            <p class="about__text about__text__third">непонятые. Когда-то они казались просто неудачными. Но, несмотря</p>
-                            <p class="about__text about__text__second_four">на критику, кажущуюся простоту или сложность, сейчас без этих лотов</p> 
-                            <p class="about__text about__text__second_five">невозможно представить современную культуру. Когда в эти вещи не</p> 
-                            <p class="about__text about__text__six">верил никто, продолжали верить их создатели. И сейчас эти лоты</p> 
-                            <p class="about__text about__text__seven">стали культовыми. </p>
-                        </div>
-            
-            </section>
-            
-            
-
-
+     
+         
         </main>
 
-        <footer> 
-            <section class="footer">
-
-                <address class="address">
-
-                        <a href="tel:+70000000">+9 999 555 5555</a><br>
-                        <a href="mailto:mail@example.com">info@sobaka.ge</a><br>
-                    
-                    наб. Принсенграхт 263- <br>
-                    265, Амстердам
-
-              
-                </address>
 
 
-                <nav class="footer__menu">
-                    <ul class="footer__menu-list">
-                    
-                        <li class="footer__menu-list-item">
-                            <a class="">главная</a>
-                        </li>
-                    
-                        <li class="footer__menu-list-item">
-                            <a class="" href="#0">посмотреть лоты</a>
-                        </li> 
 
-                        <li class="footer__menu-list-item">
-                            <a class="" href="#0">об аукционе</a>
-                        </li>    
-                    </ul>    
-                </nav>
+        <footer>
 
+     
 
-                <a class="footer__social-list">
-                    <img
-                        class="footer__social-icon"
-                        src="./images/yt.svg" 
-                        alt="Логотип проекта"
-                    />
-
-                    <img
-                        class="footer__social-icon"
-                        src="./images/vk.svg"
-                        alt="Логотип проекта"
-                    />
-
-                    <img
-                        class="footer__social-icon"
-                        src="./images/pinterest.svg"
-                        alt="Логотип проекта"
-                    />
-                </a>
-
-
-            </section>
         </footer>
-    
+        
     </body>
 </html>
