@@ -4,7 +4,6 @@ body {
   /* Тот шрифт которого много на страницы, сериф - если сломается что-то */
   /* padding: 0;
   margin: 0;
-
   font-family: Raleway, sans-serif;
   font-weight: 400; 
   background-color: #f30808; */
@@ -28,8 +27,7 @@ blockquote {
 }
 
 .content-section {
-  background-color: #ffffff; 
-  
+  background-color: #ffffff;   
 }
 
 .header {
@@ -41,7 +39,6 @@ blockquote {
   /* одна треть справа и слева, остальное в центр */
   padding: 92px 50px;
   /* сверху, влево, вниз и налево */
-
   font-family: Raleway, regular;
   font-size: 18px;
   /*общий шрифт*/
@@ -51,12 +48,10 @@ blockquote {
 
 .header__menu {
   /* контейнер навигации; */
-  
   list-style: none;
   display: flex;
   gap: 32px;
   text-underline-offset: 4px;
-
 }
 
 .header__links-list-item {
@@ -88,7 +83,6 @@ blockquote {
   /* потребуется, чтобы выравнивать блок с адресом. 
   В футере используется другое выравнивание. */
   line-height: 24px;
-
   text-decoration: underline;
   text-underline-offset: 4px;
   justify-self: end;
@@ -99,25 +93,21 @@ blockquote {
 
 .cover {
   /* вся секция; */
-  
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   /* стандартные настройки */
-
   position: relative;
   /* позиция относительно формы проекта */
   padding: 165px 50px 47px;
    /* из фигмы высота секции и отступы, нужны мне для первого текстового объекта*/
-  
 }
 
 .overlay {
   /* полупрозрачный блок поверх секции; */  
   background-color: #000000;
   opacity: 60%;
-
   position: absolute;
   /* в основном только для оверлея */
   z-index: 0;
@@ -131,17 +121,14 @@ blockquote {
   font-family: "Raleway", bold;
   font-size: 100px;
   color: #FFFFFF;
-  text-transform: uppercase;
-  /* данные из фигмы */
-
+  text-transform: uppercase; /* данные из фигмы */
   position: relative;
- padding-bottom: 135px; 
+  padding-bottom: 135px; 
 }
 
 .aligned-text {
   /* классы для выравнивания строк текста и превращения их в блочный элемент; 
   для выражения НО */
-  
   letter-spacing: 30px;
   display: block;
 }
@@ -149,7 +136,6 @@ blockquote {
 .letter-spacing-extended {
   /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты; 
   для выражения О(но) и (те)БE*/
-  
   align-items: center;
   letter-spacing: 60px;
 }
@@ -157,14 +143,12 @@ blockquote {
 .no-letter-spacing {
   /* класс для обнуления общего межбуквенного расстояния для последней буквы;
   для буквы (над)О */
-  
   letter-spacing: 0px;
 }
 
 .aligned-text_center {
   /* классы для выравнивания строк текста и превращения их в блочный элемент; 
    для выражения ТЕ(бе)*/
-  
   display: block;
   text-align: center;
   line-height: 133%;
@@ -173,7 +157,6 @@ blockquote {
 .aligned-text_right {
   /* классы для выравнивания строк текста и превращения их в блочный элемент;
   для выражения НАД(о) */
-
   display: block;
   text-align: right;
   letter-spacing: 26.5px;
@@ -182,12 +165,10 @@ blockquote {
 
 .cover__description {
   /* контейнер для подзаголовка и кнопки; */
-  
   color: #FFFFFF;
   text-transform: uppercase;
   font-family: Raleway, regular;
   font-size: 22px;
-
   position: relative;
   display: flex;
   align-items: center;
@@ -196,7 +177,6 @@ blockquote {
 
 .cover__description-text {
   /* текст подзаголовка; */
-  
   color: #FFFFFF;
   text-transform: uppercase;
   font-family: Raleway, regular;
@@ -208,14 +188,12 @@ blockquote {
 
 .bet-button {
   /* кнопка «Сделать ставку». */
-  
   border: 1px solid #FFFFFF;
   background-color: transparent;
   width: 256px;
   height: 51px;
   text-align: center;
   /* Параметры рамки, цвет и рамка */
-
   color: #FFFFFF;
   text-transform: uppercase;
   font-family: Raleway, regular;
@@ -229,7 +207,6 @@ blockquote {
  /* padding: 179px 24px 146px; */
  padding: 179px 24px 0px;
  position: relative;
- 
 }
 
 .lots__heading {
@@ -239,7 +216,6 @@ blockquote {
   text-transform: uppercase;
   font-size: 40px;
   position: relative;
-  
 }
 
 .lots__card-list {
@@ -251,7 +227,6 @@ blockquote {
   /* margin-bottom: 50px; */
   color: #ffffff;
   position: relative;
-  
 }
 
 .lots__card-list-item {
@@ -268,35 +243,26 @@ blockquote {
 .card {
   /* карточка; */
   /* min-height: 563px; */
- 
   padding: 50px 40px 48px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  
-  
 }
 
 .card-link {
   /* ссылка, обрамляющая карточку; */
 text-decoration: none;
 display: block;
-
-
 }
 
 .card__title {
   /* заголовок карточки; */
-
  word-break: break-word;
  text-transform: uppercase;
  text-decoration: underline;
  font-size: 22px;
  position: relative;
- 
-
 }
 
 .card__text {
@@ -305,8 +271,6 @@ font-size: 20px;
 color: #FFFFFF;
 /* padding: 245px 40px 48px; */
 position: relative;
-
-
 }
 
 .card_type_film {
@@ -315,7 +279,6 @@ position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .card_type_book {
@@ -332,7 +295,6 @@ position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .lots__look-more-link {
@@ -342,7 +304,6 @@ position: relative;
   padding-left: 40px;
   padding-top: 32px;
   text-underline-position: under;
-
 }
 
 
@@ -357,8 +318,6 @@ position: relative;
   padding: 183px 24px 170px;
   row-gap: 8px;
   grid-template-rows: 240px 1fr;
-
-
 }
 
 .about__column {
@@ -386,7 +345,6 @@ position: relative;
   /* изображение логотипа */
   width: 240px;
   height: 114px;
-
   margin-top: 62px;
   margin-bottom: 0px;
 }
@@ -398,7 +356,6 @@ position: relative;
   flex-direction: column;
   justify-content: center;
   text-transform: uppercase;
-  
 }
 
 .about__text {
@@ -419,19 +376,13 @@ position: relative;
   /* через грид строю футер */
   grid-template-columns: 1fr 2fr 1fr ;
   /* одна треть справа и большая часть в центре, остальное справо */
- 
-
   font-family: Raleway, regular;
   font-size: 18px;
   /*общий шрифт*/
   align-items: center;
     /* выравнивает по центру */
-
   padding-top: 10px;  
   padding-left: 50px;
-  
-
-  
 }
 
 .footer__menu {
@@ -452,7 +403,6 @@ position: relative;
   /* пункт списка меню; */
   list-style-type: none;
   display: block;
-
 }
 
 .footer__menu-link {
@@ -467,7 +417,6 @@ position: relative;
   /* список ссылок на социальные сети. Можно не добавлять тег <nav>, 
   потому что это ссылки на внешние ресурсы; */
   display: flex;
-  
 }
 
 .footer__social-list-item {
