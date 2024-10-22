@@ -4,9 +4,9 @@ body {
   /* Тот шрифт которого много на страницы, сериф - если сломается что-то */
   /* padding: 0;
   margin: 0;
-  font-family: Raleway, sans-serif;
   font-weight: 400; 
   background-color: #f30808; */
+  font-family: Raleway, sans-serif;
 }
 
 
@@ -103,7 +103,6 @@ blockquote {
   padding: 165px 50px 47px;
    /* из фигмы высота секции и отступы, нужны мне для первого текстового объекта*/
 }
-
 .overlay {
   /* полупрозрачный блок поверх секции; */  
   background-color: #000000;
