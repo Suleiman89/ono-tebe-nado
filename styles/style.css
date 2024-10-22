@@ -105,12 +105,12 @@ blockquote {
 }
 
 .overlay {
-/* полупрозрачный блок поверх секции; */  
-background-color: #000000;
-opacity: 60%;
-position: absolute;
-z-index: 0;
-inset: 0;
+  /* полупрозрачный блок поверх секции; */  
+  background-color: #000000;
+  opacity: 60%;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
 }
 
 .cover__title {
