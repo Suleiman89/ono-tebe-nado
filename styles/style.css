@@ -27,12 +27,12 @@ blockquote {
 }
 
 .content-section {
-  background-color: #ffffff;   
+  background-color: #ffffff;
 }
 
 .header {
   /* вся шапка; */
-  background-color: #ffffff; 
+  background-color: #ffffff;
   display: grid;
   /* через грид строю хедер */
   grid-template-columns: 1fr min-content 1fr;
@@ -123,7 +123,7 @@ blockquote {
   color: #FFFFFF;
   text-transform: uppercase; /* данные из фигмы */
   position: relative;
-  padding-bottom: 135px; 
+  padding-bottom: 135px;
 }
 
 .aligned-text {
@@ -367,7 +367,7 @@ position: relative;
   color: #000000;
   flex-direction: column;
   gap: 24px;
-  letter-spacing: 0.08px; 
+  letter-spacing: 0.08px;
 }
 
 .footer {
@@ -381,7 +381,7 @@ position: relative;
   /*общий шрифт*/
   align-items: center;
     /* выравнивает по центру */
-  padding-top: 10px;  
+  padding-top: 10px;
   padding-left: 50px;
 }
 
@@ -406,7 +406,7 @@ position: relative;
 }
 
 .footer__menu-link {
-  /* ссылка меню; */ 
+  /* ссылка меню; */
 }
 
 .footer__menu-link_active {
