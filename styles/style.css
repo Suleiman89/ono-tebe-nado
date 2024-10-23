@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-weight: 400; 
   background-color: #f30808; */
-  font-family: Raleway, sans-serif;
+  /* font-family: Raleway, sans-serif; */
 }
 
 
@@ -97,15 +97,11 @@ blockquote {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* стандартные настройки */
   position: relative;
-  /* позиция относительно формы проекта */
   padding: 165px 50px 47px;
-   /* из фигмы высота секции и отступы, нужны мне для первого текстового объекта*/
 }
 
-.overlay {
-  /* полупрозрачный блок поверх секции; */  
+.overlay { 
   background-color: #000000;
   opacity: 60%;
   position: absolute;
